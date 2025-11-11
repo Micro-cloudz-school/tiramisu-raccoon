@@ -90,7 +90,7 @@ async function sendSerialMessage(message) {
         const predictedLabel = classLabels[maxIndex];
 
         // Only send if confident enough
-        if (maxScore > 0.85) {
+        if (maxScore > 0.78) {
           console.log("🎤 Heard:", predictedLabel);
           sendSerialMessage(predictedLabel);
         }
